@@ -4,8 +4,8 @@ declare (strict_types=1);
 
 class Curso
 {
-    public $nome;
-    public $descricao;
-    public $cargaHoraria;
+    public string $nome;
+    public string $descricao;
+    public float $cargaHoraria;
 }
 
