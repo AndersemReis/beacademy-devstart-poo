@@ -2,7 +2,9 @@
 
 declare (strict_types=1);
 
-class Aluno{
+class Curso
+{
     public $nome;
     public $cpf;
+    public $salario;
 }

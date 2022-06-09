@@ -1,15 +1,15 @@
 <?php
-$aluno = [
-    'nome' => 'alessandro',
-    'cpf' => '123.123.123-22'
-];
 
-$aluno1 = [
-    'Nome' => 'alessandro',
-    'cpf' => '123.123.123-22'
-];
+include 'Aluno.php';
+include 'Professor.php';
+include 'Curso.php';
 
-$aluno2 = [
-    'NOME' => 'alessandro',
-    'cpf' => '123.123.123-22'
-];
+
+$a1 = new Aluno();
+$a1 -> nome = 'andersem';
+$a1 -> cpf = '123.123.123-88';
+
+$cursoPhp = new Curso();
+$cursoPhp -> nome = 'Introduçao so PHP';
+$cursophp -> cargaHoraria = 88;
+$cursoPhp -> descricao = "aprendendo o basico e intermediario de PHP";
