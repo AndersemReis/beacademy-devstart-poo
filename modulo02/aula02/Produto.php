@@ -7,22 +7,22 @@ class Produto
     private string $nome;
     private float $valor;
 
-    public function pegarNome(): string{
+    public function getNome(): string{
         return $this->nome;
     }
 
-    public function alterarNome(string $novoNome):void
+    public function setNome(string $novoNome):void
     {
         $this->nome = $novoNome;
     }
 
-    public function pegarValor(): float
+    public function getValor(): float
     {
         return $this->valor;
 
     }
 
-    public function alterarValor(float $novoValor): void
+    public function setValor(float $novoValor): void
     {
         if($novoValor < 0 ){
             die('Valor nao pode ser negativo');
