@@ -2,7 +2,8 @@
 
 declare (strict_types=1);
 
-class Aluno{
+class Aluno
+{
     public string $nome;
     public string $cpf;
 }
