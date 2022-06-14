@@ -7,7 +7,7 @@ class Produto
     private string $nome;
     private float $valor;
     private string $descricao;
-    private Categoria $categoria;
+    private readonly Categoria $categoria;
 
     public function __construct(string $novoNome, float $novoValor, Categoria $categoria)
     {
@@ -47,6 +47,10 @@ class Produto
     public function setDescricao(string $novaDescricao):void
     {
         $this->descricao = $novaDescricao;
+    }
+
+    public function setCategoria(Categoria $categoria){
+        $this-> categoria = $categoria;
     }
 
 }
