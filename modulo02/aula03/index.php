@@ -3,6 +3,13 @@
 declare (strict_types=1);
 
 include 'Produto.php';
+include 'Categoria.php';
+
+$c1 = new Categoria('Roupas','Roupas Unissex');
+$c2 = new Categoria('Roupas de banho', 'Toalhas, toalhas de rosto');
+
+var_dump($c1);
+var_dump($c2);
 
 $p1 = new Produto('Tênis para Corrida', 299);
 $p1 -> setDescricao('Tenis para corrida de rua');
