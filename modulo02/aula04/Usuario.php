@@ -8,6 +8,12 @@ class Usuario{
     private string $senha;
     private string $cpf;
 
+    public function __construct(string $email, string $senha)
+    {
+        $this->email = $email;
+        $this->senha = $senha;
+    }
+    
     public function setNome(string $nome):void
     {
         $this->nome = $nome;

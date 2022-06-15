@@ -7,12 +7,12 @@ class Cliente extends Usuario{
     
     private string $dataCadastro;
 
-    public function getCadastro(): string 
+    public function getDataCadastro(): string 
     {
-        return $this->$cadastro;
+        return $this->$dataCadastro;
     }
-    public function setCadastro(string $cadastro): void 
+    public function setDataCadastro(string $dataCadastro): void 
     {
-        $this->cadastro = $cadastro;
+        $this->dataCadastro = $dataCadastro;
     }
 }
