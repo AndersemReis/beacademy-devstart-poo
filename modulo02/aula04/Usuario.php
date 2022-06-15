@@ -2,7 +2,8 @@
 
 declare (strict_types=1);
 
-class Usuario{
+abstract class Usuario 
+{
     private string $nome;
     private string $email;
     private string $senha;

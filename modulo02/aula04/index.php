@@ -2,6 +2,7 @@
 
 include 'Usuario.php';
 include 'Cliente.php';
+//include 'ClienteVip.php';
 include 'Gestor.php';
 include 'GestorGeral.php';
 
@@ -15,6 +16,9 @@ $g1->setNome('Zezim');
 $gg1 = new GestorGeral('pedim@gmail.com','123456789',9000);
 $gg1->setNome('pedrim');
 
+//$clienteVip = new ClientVip('clientevip@gmail.com', '123456');
+
 var_dump($c1);
 var_dump($g1);
 var_dump($gg1);
+//var_dump($clienteVip);
