@@ -4,12 +4,21 @@ include 'vendor/autoload.php';
 
 use Classes\Config\Usuario;
 use Classes\Categoria;
+use Dompdf\Dompdf;
 
-//$us1 = new Classes\Usuario();
-//$us2 = new Classes\Config\Usuario();
-$us2 = new Usuario();
-$c1 = new Categoria();
-//var_dump($us1);
-var_dump($us2);
-var_dump($c1);
-echo 'funcionou';
+// instantiate and use the dompdf class
+$dompdf = new Dompdf();
+$html = '';
+for ($n = 0; $n < 10; $n++){
+    $html .= 'oh o pente <br>';
+}
+$dompdf->loadHtml('<h1>Ola Mundo, estou aprendendo PHP!</h1>'.$html);
+
+// (Optional) Setup the paper size and orientation
+$dompdf->setPaper('A4', 'landscape');
+
+// Render the HTML as PDF
+$dompdf->render();
+
+// Output the generated PDF to Browser
+$dompdf->stream();
